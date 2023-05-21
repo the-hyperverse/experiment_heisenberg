@@ -8,7 +8,7 @@ $dbname = "id16983735_thoughtwaves";
 $connection = new mysqli($servername, $username, $password, $dbname);
 if ($connection->connect_error) {
     $connection->close();
-    error_log("Connection failed: " . $conn->connect_error, 0);
+    error_log("Connection failed: " . $connection->connect_error, 0);
     echo 0;
 }
 

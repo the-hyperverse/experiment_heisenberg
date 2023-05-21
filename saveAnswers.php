@@ -1,14 +1,14 @@
 <?php
 function saveAnswer($professionGroup, $profession, $ageGroup, $answer, $feedback) {
 	$servername = "localhost";
-	$username = "id16983735_dbadmin";
-	$password = "JP3CnQ2K-vkD4NyH";
-	$dbname = "id16983735_thoughtwaves";
+	$username = "";
+	$password = "";
+	$dbname = "";
 
     $connection = new mysqli($servername, $username, $password, $dbname);
     if ($connection->connect_error) {
         $connection->close();
-        error_log("Connection failed: " . $conn->connect_error, 0);
+        error_log("Connection failed: " . $connection->connect_error, 0);
         return FALSE;
     }
 
@@ -20,7 +20,7 @@ function saveAnswer($professionGroup, $profession, $ageGroup, $answer, $feedback
         return TRUE;
     }
     else {
-        error_log("Error: " . $sql . "\n". $conn->error);
+        error_log("Error: " . $sql . "\n". $connection->error);
         $connection->close();
         return FALSE;
     }
@@ -91,7 +91,7 @@ if (isset($_POST["feedback"])) {
     }
 }
 
-$result['validationError'] = $result['professionGroup'] && $result['profession'] && $result['age'] && $result['views'] && $result['feedback'];
+$result['validationError'] = !($result['professionGroup'] && $result['profession'] && $result['age'] && $result['views'] && $result['feedback']);
 $result['success'] = FALSE;
 
 if (!$result['validationError']) {
