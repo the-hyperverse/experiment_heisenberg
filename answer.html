@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://thoughtwaves.000webhostapp.com" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Thought Waves" />
+	<meta property="og:description" content="A little mind experiment to try to break the 1st law of Thermodynamics." />
+	<meta property="og:image" content="https://thoughtwaves.000webhostapp.com/data-wavex256.png" />
+    <title>Conclution | Thought Waves</title>
+    <link rel = "icon" href="data-wavex24.png" type = "image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+</head>
+<body class="body-font">
+    <div class="container card card-stylings">
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="citation" href="index.html">Intro</a></li>
+                <li class="breadcrumb-item"><a class="citation" href="explanation.html">Explanation</a></li>
+                <li class="breadcrumb-item"><a class="citation" href="experiment.html">Experiment</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Conclution</li>
+            </ol>
+        </nav>
+        <div class="card-header">
+            <h3 class="card-title">conclution<i class="fa fa-flask" aria-hidden="true"></i></h3>
+        </div>
+        <div class="card-body">
+            <br>
+            <h6 class="card-title text-bold">answers</h6>
+            <div class="card-text mt-2 justify-content">
+                <form id="answers-form" autocomplete="on">
+                    <div class="row pb-3">
+                        <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <label for="professionGroup" class="form-label">Profession field*</label>
+                            <select id="professionGroup" name="professionGroup" class="form-control" aria-describedby="professionGroupHelpBlock" required>
+                                <option selected disabled>Click to select</option>
+                                <option value="math">Mathematics</option>
+                                <option value="phy">Physics</option>
+                                <option value="chem">Chemistry</option>
+                                <option value="bio">Biology and Medical Science</option>
+                                <option value="cs">Computer Science</option>
+                                <option value="eng">Engineering</option>
+                                <option value="mba">Business and Managerial</option>
+                                <option value="fin">Finance and Commerce</option>
+                                <option value="oth">Others</option>
+                            </select>
+                            <span id="professionGroupHelpBlock" class="form-text">
+                                Plese choose your field of profession. In case of physical labours, choose the field of your knowledge and working environment
+                            </span>
+                            
+                        </div>
+                    </div>
+                    <div class="row pb-3">
+                        <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <label for="profession" class="form-label">Profession*</label>
+                            <input type="text" id="profession" name="profession" class="form-control" aria-describedby="professionalHelpBlock" minlength="2" maxlength="40" required>
+                            <span id="professionalHelpBlock" class="form-text">
+                                Plese enter your profession. Length Min 2, Max 40
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row pb-3">
+                        <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <label for="age" class="form-label">Age group*</label>
+                            <select id="age" name="age" class="form-control" aria-describedby="ageHelpBlock" required>
+                                <option selected disabled>Click to select</option>
+                                <option value="15">&lt;15</option>
+                                <option value="20">16 - 20</option>
+                                <option value="25">21 - 25</option>
+                                <option value="30">26 - 30</option>
+                                <option value="40">31 - 40</option>
+                                <option value="60">40 - 60</option>
+                                <option value="100">&gt;60</option>
+                            </select>
+                            <span id="ageHelpBlock" class="form-text">
+                                Plese choose your age group
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row pb-3">
+                        <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <label for="views" class="form-label">Your views*</label>
+                            <textarea id="views" style="height: 200px;" name="views" class="form-control" aria-describedby="viewsHelpBlock" minlength="2" maxlength="700" required></textarea>
+                            <span id="viewsHelpBlock" class="form-text">
+                                Provide a detailed description of your views. Length Min 2, Max 700
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row pb-3">
+                        <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <label for="feedback" class="form-label">Feed back</label>
+                            <textarea id="feedback" name="feedback" class="form-control" aria-describedby="feedbackHelpBlock" minlength="2" maxlength="200"></textarea>
+                            <span id="feedbackHelpBlock" class="form-text">
+                                Optional: Any feedback about the narration, technical error, difficulty in understanding of the experiment. Length Min 2, Max 200
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row pb-3">
+                        <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <input class="btn btn-dark" style="width: 100%;" type="submit" value="Submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <br>
+            <!-- <h6 class="card-title text-bold">other anologies</h6>
+            <p class="card-text mt-2 justify-content">
+                There are lot of other analogies similar to test tube experiment.
+            </p>
+            <ol class="card-text mt-2 justify-content">
+                <li>
+                    <i>Mars colonisation</i>
+                    <p>
+                        Let us say that a Mars colonisation project requires 10 experienced professionals for various departments.
+                        There will be a lot of departments more than 10 like perimeter construction, weather maintainance, sanitary maintainance ...
+                        If there are 10 departments that requires professionals with 10 years of experience, the most efficient solution will be finding a person whose qualifies for all the 10 departments and more than 100 years old.
+                        The most efficient solution is not a feasible one.
+                        The most practical solution is to gather 10 professionals, which is not efficient on as some of the departments may share lots of aspects and one expert can manage the other related field.
+                        So it is basically a tradeoff scenario, where we need to find the correct balance.
+                        If we find a solution for uncertainty, we can use it to solve the trade off scenario.
+                    </p>
+                </li>
+            </ol> -->
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-1 px-2 pb-4">
+        <div class="footer-copyright text-center py-1 fst-italic">
+            Count of people who tried to break the impossible: <span id="visitor-count">0</span>
+        </div>
+        <!--<div class="footer-copyright text-center pb-3 fw-bold">-->
+        <!--    Narendran Seenivasan <a class="citation" href="https://github.com/Narendran-Seenivasan" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>-->
+        <!--</div>-->
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $.get('getVisitorsCount.php', (data, status) => {
+                if ((data != null || data != undefined) && data.length < 5) {				
+                    $('#visitor-count').text(data);
+                }
+            });
+
+            $("#answers-form").on("submit", (event) => {
+                event.preventDefault();
+                var formValues = {};
+                formValues.professionGroup = $('#professionGroup').val();
+                formValues.profession = $('#profession').val().trim();
+                formValues.age = $('#age').val();
+                formValues.views = $('#views').val().trim();
+                formValues.feedback = $('#feedback').val().trim();
+
+                let hasErrors = false;
+                if (formValues.profession.length < 2 || formValues.profession.length > 40) {
+                    hasErrors = true;
+                    $('#professionalHelpBlock').addClass('text-danger');
+                } else {
+                    $('#professionalHelpBlock').removeClass('text-danger');
+                }
+                if (formValues.views.length < 2 || formValues.views.length > 700) {
+                    hasErrors = true;
+                    $('#viewsHelpBlock').addClass('text-danger');
+                } else {
+                    $('#viewsHelpBlock').removeClass('text-danger');
+                }
+
+                if (!formValues.professionGroup) {
+                    hasErrors = true;
+                    $('#professionGroupHelpBlock').addClass('text-danger');
+                } else {
+                    $('#professionGroupHelpBlock').removeClass('text-danger');
+                }
+                if (!formValues.age) {
+                    hasErrors = true;
+                    $('#ageHelpBlock').addClass('text-danger');
+                } else {
+                    $('#ageHelpBlock').removeClass('text-danger');
+                }
+
+                if (hasErrors) {
+					$.alert({
+						icon: 'fa fa-exclamation-triangle',
+						title: 'Alert!',
+						content: 'I think you have entered some wrong data.<br>Please check again!',
+					});
+                    return;    
+                }
+
+                $.post("saveAnswers.php", formValues, (data, status) => {                    
+                    let response = {};
+					try {
+						response = JSON.parse(data);
+					} catch (e) {
+						$.alert({
+							icon: 'fa fa-exclamation-triangle',
+							title: 'Error!',
+							content: '<strong>Oops<i class="fa fa-exclamation" aria-hidden="true"></i></strong> There are some issue in the server.<br>Please try again.',
+						});
+						return;
+					}
+					
+                    if (response.success) {
+                        $('#professionGroupHelpBlock').removeClass('text-danger');
+                        $('#professionalHelpBlock').removeClass('text-danger');
+                        $('#ageHelpBlock').removeClass('text-danger');
+                        $('#viewsHelpBlock').removeClass('text-danger');
+                        $('#feedbackHelpBlock').removeClass('text-danger');
+						$.alert({
+							icon: 'fa fa-bell',
+							title: 'Success!',
+							content: '<strong>Yaay<i class="fa fa-exclamation" aria-hidden="true"></i></strong> Your answer is saved.<br><i class="fa fa-hand-spock-o" aria-hidden="true"></i> Live long and Prosper',
+						});
+                    } else if (response.validationError) {
+                        if (!response.professionGroup) {
+                            $('#professionGroupHelpBlock').addClass('text-danger');
+                        }
+                        if (!response.profession) {
+                            $('#professionalHelpBlock').addClass('text-danger');
+                        }
+                        if (!response.age) {
+                            $('#ageHelpBlock').addClass('text-danger');
+                        }
+                        if (!response.views) {
+                            $('#viewsHelpBlock').addClass('text-danger');
+                        }
+                        if (!response.feedback) {
+                            $('#feedbackHelpBlock').addClass('text-danger');
+                        }
+                        $.alert({
+							icon: 'fa fa-exclamation-triangle',
+							title: 'Alert!',
+							content: 'I think you have entered some wrong data.<br>Please check again!',
+						});
+                    } else {
+						$.alert({
+							icon: 'fa fa-exclamation-triangle',
+							title: 'Error!',
+							content: '<strong>Oops<i class="fa fa-exclamation" aria-hidden="true"></i></strong> There are some issue in the server.<br>Please try again.',
+						});
+                    }
+                }).fail(data => {
+                    $.alert({
+						icon: 'fa fa-exclamation-triangle',
+						title: 'Error!',
+						content: '<strong>Oops<i class="fa fa-exclamation" aria-hidden="true"></i></strong> There are some issue in the server.<br>Please try again.',
+					});
+                });
+            });
+        });
+    </script>
+</body>
+</html>

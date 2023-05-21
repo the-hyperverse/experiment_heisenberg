@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://thoughtwaves.000webhostapp.com" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Thought Waves" />
+	<meta property="og:description" content="A little mind experiment to try to break the 1st law of Thermodynamics." />
+	<meta property="og:image" content="https://thoughtwaves.000webhostapp.com/data-wavex256.png" />
+    <title>Experiment | Thought Waves</title>
+    <link rel = "icon" href="data-wavex24.png" type = "image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="body-font">
+    <div class="container card card-stylings">
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="citation" href="index.html">Intro</a></li>
+                <li class="breadcrumb-item"><a class="citation" href="explanation.html">Explanation</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Experiment</li>
+            </ol>
+        </nav>
+        <div class="card-header">
+            <h3 class="card-title">text tube experiment<i class="fa fa-flask" aria-hidden="true"></i></h3>
+        </div>
+        <div class="card-body">
+            <h6 class="card-title text-bold">initial setup</h6>
+            <p class="card-text mt-2 justify-content">
+                There are 4 test tubes of each 100ml <i>(x4= 400ml total capacity)</i> 2 | 2 in pairs.<br>
+                Each pairs have been allocated a volume of 100ml of water <i>(x2= 200ml total water)</i>.
+            </p>         
+            <ol class="card-text mt-2 justify-content">
+                <li>In 1<sup>st</sup> pair, each of the 2 test tubes are filled with 100ml of water equally, 50ml each. <span class="badge bg-dark">Consistency pair</span></li>
+                <li>In 2<sup>nd</sup> pair, one of the test tubes is fill fully with 100ml of water and another is left empty. <span class="badge bg-dark">Uncertainty pair</span></li>
+            </ol> 
+            
+            <br>
+            <h6 class="card-title text-bold">questions</h6>
+            <ol class="card-text mt-2 justify-content">
+                <li>Which pair is better and more useful than the another? Why?</li>
+                <li>How to fill the empty portion of the pairs? In the sense how to cope for addition 200ml of water required to fill 400ml capacity of test tube?</li>
+            </ol>
+
+            <br>
+            <h6 class="card-title text-bold">experiment explanation</h6>
+            <p class="card-text mt-2 justify-content">
+                We have 2 sets (pairs) and we are going to run a probability exercise on both of them seperatly.
+                We are going to choose a test tube at random for <i>N</i> number of times.
+                Obervations are below,
+                <ol>
+                    <li>
+                        <strong>Consistency set { 50ml, 50ml }</strong> - 2 half filled test tubes
+                        <ul>
+                            <li>It is clearly evident that we will get 50ml always.</li>
+                            <li>The probability to get 0ml is 0. We will get water all the time.</li>
+                            <li>The probability to get 100ml is also 0. No matter what we do, we will never get more than 50ml</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Uncertainty set { 100ml, 0ml }</strong> - 1 fully filled test tube, 1 empty test tube
+                        <ul>
+                            <li>There is an uncertainty, we may get full 100ml jackpot or total loss 0ml.</li>
+                            <li>The probability to get 0ml is 0.5, we may get nothing in a try.</li>
+                            <li>The probability to get 100ml is also 0.5, we may get jackpot also.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </p>
+            <p class="card-text mt-2 justify-content">
+                Now look at those questions,
+                <ol>
+                    <li>Which is better? Consistency or Uncertainty?</li>
+                    <li>How to solve the problems either with consistency set or with uncertainty set?</li>
+                </ol>
+                <i>Our goal is to get fully filled test tube all the time upon choosing randomly with high efficiency.</i>
+            </p>
+
+            <br>
+            <h6 class="card-title text-bold">axioms</h6>
+            <ol class="card-text mt-2 justify-content">
+                <li>Should not intermix the water across the pairs. No operations inbetween the sets should be done. Each set is an isolated distribution.</li>
+                <li>Should not throw away the empty test tube. In other words should not reduce the elements in the set.*</li>
+            </ol>
+
+            <br>
+            <h6 class="card-title text-bold">example solution</h6>
+            <ol class="card-text mt-2 justify-content">
+                <li>
+                    In the uncertainty pair, probability of getting 100ml is 0.5.<br>
+                    We need to find an algorithm which will always pick the 100ml test tube on each draw.<br>
+                    <i>(i.e) If we can see the test tube before picking, we shall pick the right one always.</i><br>
+                    Here <i>'seeing'</i> is the algorithm.
+                </li>
+                <li>
+                    <p>
+                        For the sake of experiment, let us just say have we the power to control the time. <br>
+                        We can squeeze the progress of time to almost 0 and we can traverse through the time very fast almost &infin;.
+                    </p>
+                    <p>Now follow the steps,
+                        <i>
+                            <ol>
+                                <li>Freeze the time.</li>
+                                <li>Pour the water from fully filled test tube to the empty one.</li>
+                                <li>Run the time for the lowest infinitesimal amount as possible.</li>
+                                <li>Continue the above 3 steps till the amount of time you ran is measurable, say 1 minute.</li>
+                                <li>Now isolate that minute and run it fast as possible.</li>
+                            </ol>
+                        </i>
+                    </p>
+                    <p class="pb-1">
+                        Like a video that is being played faster, you will now observe that both of the test tubes will be having 100ml of water,
+                        due to faster time progression. <br>
+                        Eventhough, we did not produce more water, we produced an illusion that acts like it is filled.
+                    </p>
+                </li>
+                <li>
+                    Yes, there is always the option in which we shall produce more water than the given 100ml for both consistency pair and uncertainty pair.          
+                    For that, we need to break the <i>1<sup>st</sup> Law of Thermodynamics</i>.
+                </li>
+            </ol>
+            <p class="card-text my-3 text-center">
+                We have two pairs, <i>consistency pair and uncertainty pair</i>.<br>
+                We can try to solve any of these or we can try to break the <i>1<sup>st</sup> Law of Thermodynamics</i>.
+            </p>
+            <p class="card-text my-3 text-center">
+                <a class="citation" href="answer.html">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    <i>Click here to share your views</i>
+                </a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-1 px-2 pb-4">
+        <div class="footer-copyright text-center py-1 fst-italic">
+            Count of people who tried to break the impossible: <span id="visitor-count">0</span>
+        </div>
+        <!--<div class="footer-copyright text-center pb-3 fw-bold">-->
+        <!--    Narendran Seenivasan <a class="citation" href="https://github.com/Narendran-Seenivasan" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>-->
+        <!--</div>-->
+    </footer>
+    <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $.get('getVisitorsCount.php', (data, status) => {
+				if ((data != null || data != undefined) && data.length < 5) {				
+                    $('#visitor-count').text(data);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

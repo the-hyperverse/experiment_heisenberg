@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://thoughtwaves.000webhostapp.com" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Thought Waves" />
+	<meta property="og:description" content="A little mind experiment to try to break the 1st law of Thermodynamics." />
+	<meta property="og:image" content="https://thoughtwaves.000webhostapp.com/data-wavex256.png" />
+    <title>Intro | Thought Waves</title>
+    <link rel = "icon" href="data-wavex24.png" type = "image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="body-font">
+    <div class="text-center mt-3">
+        <h1 class="display-4 title"><img class="logo" alt="logo" src="data-wavex256.png"><span>HYPERVERSE</span></h1>
+    </div>
+    <div class="container card card-stylings">
+        <div class="card-body">
+            <h3 class="card-title">welcome<span class="body-font">!</span><i class="fa fa-flask" aria-hidden="true"></i></h3>
+            <p class="card-text mt-2 justify-content">
+                Thanks to participate in this thought experiment. Please try to answer within the axioms.
+            </p>
+            <br>
+            <h6 class="card-title text-bold">insights</h6>
+            <p class="card-text mt-2 justify-content">
+                We are going to try to break the <strong><a class="citation" href="https://en.wikipedia.org/wiki/First_law_of_thermodynamics" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click to read on Wikipedia"><i class="fa fa-link" aria-hidden="true"></i>1st Law of Thermodynamics</a></strong>
+                and to solve <strong><a class="citation" href="https://en.wikipedia.org/wiki/Uncertainty_principle" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click to read on Wikipedia"><i class="fa fa-link" aria-hidden="true"></i>Heisenberg's Uncertainty Principle</a></strong>.
+            </p>
+            <p class="card-text mt-2 justify-content">
+                For that we are going to experiment with our mind which will be analogous to the actual problem statement in <strong>Quantum Mechanics</strong>.
+            </p>
+            <p class="card-text mt-2 justify-content">
+                The idea behind this thought experiment is that when we try to solve the real life based problem, it might give us some perpective to actually solve the problem in Quantum Context.
+            </p>
+            <p class="card-text mt-2 justify-content">
+                It is known that the solution to this experiment may not be correct or may not be able to extrapolate to Quantum context.
+                But we have some help from statistics. <strong><a class="citation" href="https://en.wikipedia.org/wiki/Wisdom_of_the_crowd" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click to read on Wikipedia"><i class="fa fa-link" aria-hidden="true"></i>Wisdom of the crowd</a></strong>
+                which might help us in narrowing down a common perpective in solving the mind experiment and in turn actual problem statement.
+            </p>
+            <p class="card-text my-3 text-center">
+                <a class="citation" href="explanation.html">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    <i>Click here and let me explain in detail</i>
+                </a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-1 px-2">
+        <div class="footer-copyright text-center py-1 fst-italic">
+            Count of people who tried to break the impossible: <span id="visitor-count">0</span>
+        </div>
+        <!--<div class="footer-copyright text-center py-1 fw-bold">-->
+        <!--    Narendran Seenivasan <a class="citation" href="https://github.com/Narendran-Seenivasan" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>-->
+        <!--</div>-->
+        <div class="footer-copyright text-center pb-3 fst-italic">
+            Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+    </footer>
+    <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $.get('getVisitorsCount.php', (data, status) => {
+				if ((data != null || data != undefined) && data.length < 5) {				
+                    $('#visitor-count').text(data);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

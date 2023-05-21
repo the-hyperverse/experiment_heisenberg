@@ -1,0 +1,79 @@
+@media only screen and (max-width: 599px) {
+    .card-stylings {
+        margin: 2.2rem 1.2rem;
+        width: auto;
+        height: auto;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .body-font {
+        font-family: 'Roboto Mono', monospace;
+        font-size: .8rem;
+    }
+    .title {
+        margin-top: 2rem;
+        margin-bottom: -10px;
+        font-family: 'Poiret One', cursive;
+        font-size: 1.6rem;
+    }
+    .logo {
+        max-width: 1.6rem;
+        margin-top: -7px;
+    }
+    .quote-font {
+        font-size: .9rem;
+    }
+    ul, ol {
+        padding-left: 20px;
+    }
+    nav {
+        font-size: .7rem;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .card-stylings {
+        margin: 3rem 3rem 0.5rem;
+        max-width: 92%;
+        height: auto;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .body-font {
+        font-family: 'Roboto Mono', monospace;
+    }
+    .title {
+        margin-bottom: -20px;
+        font-family: 'Poiret One', cursive;
+        font-size: 3.3rem;
+    }
+    .logo {
+        max-width: 4rem;
+        margin-top: -15px;
+    }
+    .quote-font {
+        font-size: 1.4rem;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Major Mono Display', monospace;
+    font-weight: bold;
+}
+
+h6 {
+    font-family: 'Major Mono Display', monospace;
+    font-weight: bolder;
+}
+
+.justify-content {
+    text-align: justify;
+}
+
+.citation {
+    color: black;
+    font-weight: bolder;
+}
+
+li {
+    padding-bottom: .7rem;
+}
