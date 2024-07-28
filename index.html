@@ -55,9 +55,6 @@
     </div>
     <!-- Footer -->
     <footer class="page-footer font-small special-color-dark pt-1 px-2">
-        <div class="footer-copyright text-center py-1 fst-italic">
-            Count of people who tried to break the impossible: <span id="visitor-count">0</span>
-        </div>
         <!--<div class="footer-copyright text-center py-1 fw-bold">-->
         <!--    Narendran Seenivasan <a class="citation" href="https://github.com/Narendran-Seenivasan" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>-->
         <!--</div>-->
@@ -68,14 +65,5 @@
     <!-- Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(() => {
-            $.get('getVisitorsCount.php', (data, status) => {
-				if ((data != null || data != undefined) && data.length < 5) {				
-                    $('#visitor-count').text(data);
-                }
-            });
-        });
-    </script>
 </body>
 </html>
