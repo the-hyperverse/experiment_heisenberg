@@ -1,4 +1,4 @@
 # Experiment Heisenberg
-Website for simple thought experiment to crack 1st Law of Thermodynamics
+Website for simple thought experiment 
 
 Vanila PHP and Jquery
